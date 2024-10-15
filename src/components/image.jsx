@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
 
 export function Image({ imageUrl, size, altText }) {
-  
-
   return (
     <img 
       className="image" 

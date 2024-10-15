@@ -3,57 +3,39 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: darkblue;
   background-color: #ffffff;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .image-gallery {
-  display: flex;
-  flex-direction: column;
-}
-
-.image-wrapper {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
+  position: relative;
   margin: 10px;
 }
 
+.image-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .image {
-  /* position: relative;
-  overflow: hidden; */
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 8px; 
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
-  /* display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh; */
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin: 15px;
+  text-align: center;
 }
 
 button {
@@ -77,7 +59,6 @@ button:focus-visible {
 
 @media screen and (min-width: 688px) {
   .image-gallery {
-    grid-template-columns: 1fr 1fr;
     gap: 15px;
     margin: 15px;
   }
@@ -85,7 +66,6 @@ button:focus-visible {
 
 @media screen and (min-width: 1167px) {
   .image-gallery {
-    grid-template-columns: 1fr 1fr 1fr; 
     gap: 15px;
     margin: 15px;
   }
@@ -93,7 +73,6 @@ button:focus-visible {
 
 @media screen and (min-width: 1549px) {
   .image-gallery {
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
     gap: 15px;
     margin: 20px;
   }
