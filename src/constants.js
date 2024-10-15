@@ -8,4 +8,11 @@ export const IMAGE_URLS = [
   "https://assets.lummi.ai/assets/QmetAnRzhxLeV73WZkjbjMmGhCnHVT4Ysc343JzZQvNxdd?auto=format&w=1500"
 ]
 
+// const IMAGES = [{
+//   src: "https://assets.lummi.ai/assets/QmetAnRzhxLeV73WZkjbjMmGhCnHVT4Ysc343JzZQvNxdd?auto=format&w=1500",
+//   title: 'Purple cat',
+//   alt: ''
+
+// }]
+
 // Add more URLs as needed
