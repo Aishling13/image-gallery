@@ -35,8 +35,8 @@ export const useUnsplashApi = () => {
   }, []); // empty dependency array means this runs once when component mounts
 
   // render the component
-  // if (loading) return <p>Loading...</p>;
-  // if (error) return <p>Error: {error}</p>;
+  if (loading) return [];
+  if (error) return [];
 
   return images;
 }
