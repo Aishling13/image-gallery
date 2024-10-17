@@ -1,20 +1,16 @@
-import { Image } from "./image.jsx"; // Import the Image component
-// import { IMAGES } from "../constants.js"; // Import the array of URLs
+import { Image } from "./image.jsx"; 
 import { useSetUpColumns } from "../hooks/useSetUpColumns.jsx";
 import { useUnsplashApi } from "../hooks/useUnsplashApi.jsx";
 
-// Function to set the number of columns based on screen width
 export const Gallery = () => {
   const columns = useSetUpColumns();
   const images = useUnsplashApi();
 
-  // create an array of columns, where each column is an empty array initially
   const columnsArray = [...new Array(columns)].map(() => []); 
   
-  // distribute images across the columns using modulo
   images.forEach((image, imageIndex) => {
-    const columnIndex = imageIndex % columns; // determine the column based on imageIndex
-    columnsArray[columnIndex].push(image); // add the image to the corresponding column
+    const columnIndex = imageIndex % columns; 
+    columnsArray[columnIndex].push(image);
   });
 
   return (
