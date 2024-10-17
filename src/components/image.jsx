@@ -18,9 +18,9 @@ export const Image = ({ imageUrl, size, altText }) => {
       />
       <div className="overlay">
         <button 
-        className={`icon ${liked ? 'liked' : ''}`} 
-        onClick={handleHeartClick}
-        aria-label={liked ? 'Unlike this image' : 'Like this image'}  
+          className={`icon ${liked ? 'liked' : ''}`} 
+          onClick={handleHeartClick}
+          aria-label={liked ? 'Unlike this image' : 'Like this image'}  
         >
           <i className="fas fa-heart"></i>
         </button>
